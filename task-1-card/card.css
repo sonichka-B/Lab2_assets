@@ -1,0 +1,37 @@
+/*
+  Стилі для картки. Студент пише сюди.
+
+  Обов'язкові вимоги:
+
+  1. Глобально: * { box-sizing: border-box; }
+  2. CSS-змінні в :root — щонайменше 4 токени
+     (наприклад: --accent, --text, --radius, --space).
+     Решта правил використовує var(...).
+
+  3. Картка:
+     - фон, рамка або тінь, border-radius, padding;
+     - фіксована ширина ~280px, центрування на сторінці;
+     - елементи в стовпець, кнопка завжди прилягає до низу
+       (підказка: flex-direction: column + margin-top: auto).
+
+  4. Зображення:
+     - фіксоване співвідношення сторін через aspect-ratio;
+     - object-fit: cover, щоб не спотворювалось.
+
+  5. Опис (.card-description):
+     - максимум 2 рядки з трикрапкою (-webkit-line-clamp: 2,
+       display: -webkit-box, -webkit-box-orient: vertical, overflow: hidden).
+
+  6. Hover на картці:
+     - субтильна elevation (зміна тіні або translateY(-2px));
+     - плавна transition (~200ms).
+
+  7. Кнопка:
+     - :hover (зміна фону/тексту);
+     - :focus-visible (видимий outline для клавіатури);
+     - transition (~150ms).
+
+  Цільовий вигляд — у target-card.html (відкрити окремо).
+*/
+
+/* Студент починає звідси */
