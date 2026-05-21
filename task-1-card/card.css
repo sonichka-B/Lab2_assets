@@ -35,3 +35,73 @@
 */
 
 /* Студент починає звідси */
+* {
+    box-sizing: border-box;
+}
+:root{
+    --acent-shadow-color: goldenrod;
+    --color-border: gray;
+    --acent-text-color: black;
+    --radius: 30px;
+    --pading: 10px;
+    --space: 15px;
+    --text-size:20px;
+}
+body{
+    background-color: #e6e0e0;
+    margin: 50px;
+}
+.card{
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow:var(--acent-shadow-color) 0 0 20px;
+    padding: var(--pading);
+    background: white;
+    width:280px;
+    border-spacing: var(--space);
+    flex-direction: column;
+    margin-top: auto;
+    font-size: var(--text-size);
+
+}
+.card:hover{
+    transform:translateY(-2px);
+    transition-duration:200ms;
+}
+.card-image{
+    border-radius: var(--radius);
+    aspect-ratio: auto;
+    object-fit: cover;
+    width: 100%;
+}
+.card-description{
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+button:hover{
+    color: white;
+    background-color: darkred;
+}
+button:focus-visible{
+    outline: none;
+    border: 5px solid #f67352;
+}
+button {
+    transition-duration: 150ms;
+    background-color: var(--acent-shadow-color);
+    color: var(--acent-text-color);
+    font-size: 30px;
+    border-radius: var(--radius);
+    border-width: 20px;
+
+}
+.card-meta{
+    color: gray;
+}
+.card-price{
+    color: blue;
+    font-weight: bold;
+    font-size: var(--text-size);
+}
